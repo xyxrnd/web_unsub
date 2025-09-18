@@ -17,7 +17,140 @@
             background: linear-gradient(to right, #4891ff, #94baf3)
                 /* Bisa juga pakai arah lain: to bottom, to top, to left */
         }
+        body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 20px;
+    }
+
+    /* Bagian Kiri */
+    .contact-info {
+      flex: 1;
+    }
+
+    .contact-info h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      line-height: 1.4em;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .contact-info a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons i {
+      font-size: 24px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    /* Bagian Form */
+    .contact-form {
+      flex: 1;
+      background: #e5e5e5;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .contact-form h3 {
+      margin-top: 0;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    .contact-form p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid black;
+      background: transparent;
+      margin-bottom: 15px;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+
+    .contact-form button {
+      background: #ff7f66;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    /* Bagian Lokasi */
+    .location {
+      padding: 0 40px 40px 40px;
+    }
+
+    .location h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      
+    }
+
+    .map-placeholder {
+      width: 100%;
+      height: 200px;
+      background: #d9d9d9;
+    }
+     .social-icons {
+      display: flex;
+      gap: 15px;
+      font-size: 28px;
+    }
+
+    .social-icons a {
+      color: #000; /* hitam sesuai desain */
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ff7f66; /* berubah oranye saat hover */
+    }
+     .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icons a img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.2);
+    }
     </style>
+    
 </head>
 
 <body>
@@ -70,25 +203,44 @@
     </nav>
 
     <!-- Beranda Unsub (16:9) -->
-    <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="<?= base_url("img/bg.jpg") ?>" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="<?= base_url("img/bg2.jpg") ?>" class="d-block w-100" alt="...">
-            </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="<?= base_url("img/bg.jpg")?>" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
     </div>
+    <div class="carousel-item">
+      <img src="<?= base_url("img/bg2.jpg")?>" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="<?= base_url("img/bg.jpg")?>" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
     <!-- Tentang kami, sejarah, visi misi -->
     <div class="container-fluid my-3">
         <div class="section-container">
@@ -137,6 +289,12 @@
     </div>
 
     <!-- berita -->
+     <div class="container mt-4 mb-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Berita</h2>
+      <hr>
+    </div>
     <div class="berita">
         <ul class="cards">
             <li class="cards__item">
@@ -171,48 +329,105 @@
             </li>
     </div>
 
+    <!-- Agenda -->
+     <div class="container mt-4 mb-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Agenda Mendatang</h2>
+    </div>
+    <div class="col-md-12">
+      <div class="row rounded bg-light bg-gradient mt-4 p-3">
+        <div class="col-md-3 pl-0 pr-0">
+          <img src="https://picsum.photos/400/300" class="img-fluid w-100">
+        </div>
+        <div class="col-md-9">
+          <div class="card-block p-3">
+            <h4 class="card-title mt-0"><strong>Lorem ipsum dolor sit amet</strong></h4>
+            <p class="text-secondary">
+              <strong>1015 California Ave, Los Angeles CA 7:00 pm - 8:00 pm</strong>
+            </p>        
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     <!-- Footer -->
-    <footer class="bg-cyan text-black pt-4 pb-2 mt-5">
-        <div class="container">
-            <div class="row">
+<footer>
+<!-- fontawesome untuk icon sosmed -->
+  <script src="https://kit.fontawesome.com/4f54d0a6d1.js" crossorigin="anonymous"></script>
 
-                <!-- Logo / Brand -->
-                <div class="col-md-4 mb-3">
-                    <h5>MyWebsite</h5>
-                    <p>Deskripsi singkat tentang website kamu. Bisa jadi slogan atau misi singkat.</p>
-                </div>
+  <div class="contact-container">
+    <!-- Bagian Kiri -->
+    <div class="contact-info">
+      <h2>Kami selalu siap untuk <br> membantu anda dan menjawab <br>semua pertanyaan</h2>
 
-                <!-- Links -->
-                <div class="col-md-4 mb-3">
-                    <h5>Menu</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Beranda</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Tentang</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Layanan</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Kontak</a></li>
-                    </ul>
-                </div>
+      <p><b>LOKASI</b></p>
+      <p>Kampus 1<br>Jalan R.A Kartini, KM. 03, Subang,<br>Jawa Barat</p>
+      <p>Kampus 2<br>Jalan Arief Rahman Hakim No. 8,<br>Subang, Jawa Barat</p>
 
-                <!-- Contact / Info -->
-                <div class="col-md-4 mb-3">
-                    <h5>Hubungi Kami</h5>
-                    <p>Email: info@example.com</p>
-                    <p>Telepon: +62 812 3456 7890</p>
-                    <p>Alamat: Jl. Contoh No.123, Jakarta</p>
-                </div>
+      <p><b>EMAIL</b></p>
+      <p><a href="mailto:info@unsub.ac.id">info@unsub.ac.id</a></p>
 
-            </div>
+      <p><b>PUSAT PANGGILAN</b></p>
+      <p><a href="tel:+6282130777712">+6282130777712</a></p>
 
-            <!-- Copyright -->
-            <div class="text-center pt-3 border-top border-secondary">
-                <p class="mb-0">&copy; 2025 MyWebsite. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+      <p><b>SOSIAL MEDIA</b></p>
+      <div class="social-icons">
+<div class="social-icons">
+    <!-- Instagram -->
+    <a href=https://www.instagram.com/universitas.subang?igsh=aXF0cmdpaW1wYXI2" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+
+    <!-- Twitter (X sekarang) -->
+    <a href="https://twitter.com" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter">
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/groups/554322674595643/?ref=share&mibextid=CTbP7E" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook">
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://youtube.com/@universitas.subang?si=-8UGN8W1axpmqdZB" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
+    </a>
+  </div>
+      </div>
+    </div>
+
+    <!-- Bagian Form -->
+    <div class="contact-form">
+      <h3>HUBUNGI KAMI</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+      <input type="text" placeholder="NAMA LENGKAP">
+      <input type="email" placeholder="EMAIL">
+      <input type="text" placeholder="JUDUL LAPORAN">
+      <textarea placeholder="PESAN"></textarea>
+      <br>
+      <button>Kirim Pesan</button>
+    </div>
+  </div>
+
+  <!-- Lokasi -->
+  <div class="location">
+    <h2>LOKASI UNIVERSITAS SUBANG</h2>
+    <div class="map-placeholder"></div>
+  </div>    
+
+</footer>
+
 
 </body>
 
