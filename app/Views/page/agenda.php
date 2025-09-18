@@ -9,7 +9,7 @@ Agenda
 <div class="container my-5">
 
     <!-- Agenda -->
-    <h4 class="section-title">Agenda Mendatang</h4>
+    <h4 class="section-title">Agenda Mendatang ajdgsajgs</h4>
     <div class="card mb-4">
         <div class="card-body">
             <h5 class="card-title">Pengenalan kehidupan kampus bagi mahasiswa baru (PKKMB)</h5>
