@@ -149,6 +149,44 @@
     .social-icons a img:hover {
       transform: scale(1.2);
     }
+     /* Tombol lingkaran */
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #f0f0f0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 999;
+    }
+
+    /* Muncul saat discroll */
+    #backToTop.show {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    /* Ikon panah */
+    #backToTop svg {
+      width: 24px;
+      height: 24px;
+      fill: #1a73e8; /* biru */
+    }
+
+    #backToTop:hover {
+      background-color: #e0e0e0;
+    }
+    
     </style>
     
 </head>
@@ -330,26 +368,86 @@
     </div>
 
     <!-- Agenda -->
-     <div class="container mt-4 mb-5">
+<div class="container mt-4 mb-5">
   <div class="row">
     <div class="col-md-12">
-      <h2>Agenda Mendatang</h2>
+      <h2 class="mb-4">Agenda Mendatang</h2>
     </div>
+
     <div class="col-md-12">
-      <div class="row rounded bg-light bg-gradient mt-4 p-3">
-        <div class="col-md-3 pl-0 pr-0">
-          <img src="https://picsum.photos/400/300" class="img-fluid w-100">
-        </div>
-        <div class="col-md-9">
-          <div class="card-block p-3">
-            <h4 class="card-title mt-0"><strong>Lorem ipsum dolor sit amet</strong></h4>
-            <p class="text-secondary">
-              <strong>1015 California Ave, Los Angeles CA 7:00 pm - 8:00 pm</strong>
-            </p>        
+      <!-- Carousel -->
+      <div id="agendaCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row rounded bg-light bg-gradient p-3 shadow-sm">
+              <div class="col-md-3">
+                <img src="https://picsum.photos/400/300" class="img-fluid w-100" alt="Agenda 1">
+              </div>
+              <div class="col-md-9">
+                <div class="p-3">
+                  <h4 class="mt-0"><strong>Lorem ipsum dolor sit amet</strong></h4>
+                  <p class="text-secondary mb-0">
+                    <strong>1015 California Ave, Los Angeles CA</strong><br>
+                    7:00 pm - 8:00 pm
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row rounded bg-light bg-gradient p-3 shadow-sm">
+              <div class="col-md-3">
+                <img src="https://picsum.photos/400/301" class="img-fluid w-100" alt="Agenda 2">
+              </div>
+              <div class="col-md-9">
+                <div class="p-3">
+                  <h4 class="mt-0"><strong>Praesent commodo cursus magna</strong></h4>
+                  <p class="text-secondary mb-0">
+                    <strong>500 Sunset Blvd, New York</strong><br>
+                    6:30 pm - 9:00 pm
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row rounded bg-light bg-gradient p-3 shadow-sm">
+              <div class="col-md-3">
+                <img src="https://picsum.photos/400/302" class="img-fluid w-100" alt="Agenda 3">
+              </div>
+              <div class="col-md-9">
+                <div class="p-3">
+                  <h4 class="mt-0"><strong>Vestibulum id ligula porta felis</strong></h4>
+                  <p class="text-secondary mb-0">
+                    <strong>123 Main Street, Chicago</strong><br>
+                    5:00 pm - 6:30 pm
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#agendaCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#agendaCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#agendaCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#agendaCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#agendaCarousel" data-bs-slide-to="2"></button>
         </div>
       </div>
     </div>
@@ -368,7 +466,7 @@
   <div class="contact-container">
     <!-- Bagian Kiri -->
     <div class="contact-info">
-      <h2>Kami selalu siap untuk <br> membantu anda dan menjawab <br>semua pertanyaan</h2>
+      <h2 style="width:500px; height:110px; background:#3498db; border-radius:15px;">Kami selalu siap untuk <br> membantu anda dan menjawab <br>semua pertanyaan</h2>
 
       <p><b>LOKASI</b></p>
       <p>Kampus 1<br>Jalan R.A Kartini, KM. 03, Subang,<br>Jawa Barat</p>
@@ -423,10 +521,41 @@
   <!-- Lokasi -->
   <div class="location">
     <h2>LOKASI UNIVERSITAS SUBANG</h2>
-    <div class="map-placeholder"></div>
+    <div class="map-placeholder">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5605.303181038212!2d107.78388893916801!3d-6.57859648693668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e693b4130dcd33f%3A0xb8f2d91a2faaa0fe!2sUniversitas%20Subang!5e0!3m2!1sid!2sid!4v1758246722486!5m2!1sid!2sid" width="840" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>    
 
 </footer>
+
+ <!-- Tombol -->
+  <div id="backToTop" onclick="scrollToTop()">
+    <!-- Panah ke atas (SVG) -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.59 5.58L20 12l-8-8-8 8z"/>
+    </svg>
+  </div>
+
+  <script>
+    const btn = document.getElementById("backToTop");
+
+    // tampilkan tombol saat scroll ke bawah 200px
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.classList.add("show");
+      } else {
+        btn.classList.remove("show");
+      }
+    };
+
+    // fungsi scroll ke atas
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>
 
 
 </body>
