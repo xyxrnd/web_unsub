@@ -186,7 +186,46 @@
     #backToTop:hover {
       background-color: #e0e0e0;
     }
-    
+     /* Header Akademik */
+    .section-header {
+      background: linear-gradient(to right, #9da9c7, #b3c2e0);
+      padding: 15px 30px;
+    }
+    .section-header h2 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* Card Custom */
+    .card {
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .card h6 {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .card .btn {
+      font-size: 13px;
+      padding: 5px 15px;
+    }
     </style>
     
 </head>
@@ -288,7 +327,7 @@
                     <p>Universitas Subang yang biasa di singkatn (Unsub) merupakan Universitas hpertama yang ada di kabupaten Subang, memiliki 7 Fakultas dan 14 Program Studi (prodi) dengan jenjang pendidikan S2, S1 dan D3. Terdiri atas 2 (dua) kampus, yakni Kampus I dan Kampus II. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
                 </div>
                 <div class="image-content">
-                    <img src="https://youtu.be/P4WPrqNteNE" alt="Gedung Universitas Subang">
+                    <img src="<?=base_url("img/bg.jpg")?>" alt="Gedung Universitas Subang">
                 </div>
             </div>
         </div>
@@ -332,6 +371,116 @@
             </div>
         </div>
     </div>
+
+  <!-- Akademik -->
+    <!-- Header Section -->
+  <div class="section-header">
+    <h2>Akademik</h2>
+  </div>
+
+  <!-- Akademik Cards -->
+  <div class="container my-4">
+    <div class="row">
+      
+      <!-- Card 1 -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 p-3 text-center">
+          <img src="<?=base_url("img/fia.jpg")?>" alt="Fakultas">
+          <div class="card-body">
+            <h6>FAKULTAS ILMU ADMINISTRASI</h6>
+            <p>Fakultas Ilmu Administrasi Universitas Subang merupakan salah satu fakultas unggulan yang berkomitmen untuk mencetak sumber daya manusia profesional di bidang administrasi yang adaptif terhadap perkembangan zaman.</p>
+            <button class="btn btn-dark btn-sm"><a href="https://share.google/EF7muu4RjmwAUNs1J">Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 p-3 text-center">
+          <img src="<?=base_url("img/magister.jpg")?>" alt="Fakultas">
+          <div class="card-body">
+            <h6>FAKULTAS HUKUM</h6>
+            <p>Menjadi institusi pendidikan tinggi hukum terkemuka di jawa barat dalam mencerdaskan kehidupan bangsa yang dilandasi kearifan lokal dan teknologi informasi tahun 2023.</p>
+            <button class="btn btn-dark btn-sm"><a href="https://share.google/0V15eETTyBTlSRZ8t">Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 p-3 text-center">
+          <img src="<?=base_url("img/magister.jpg")?>" alt="Fakultas">
+          <div class="card-body">
+            <h6>FAKULTAS KOMPUTER</h6>
+            <p>Pada tahun 2030, menjadi fakultas unggulan dalam bidang ilmu komputer yang inovatif, berdaya saing global, dan menghasilkan lulusan profesional, beretika, serta berkontribusi positif bagi perkembangan teknologi dan masyarakat digital.</p>
+            <button class="btn btn-dark btn-sm"><a href="https://share.google/bnm7pdGo1Banw2Ee1">Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 p-3 text-center">
+          <img src="<?=base_url("img/magister.jpg")?>" alt="Fakultas">
+          <div class="card-body">
+            <h6>FAKULTAS KOMUNIKASI</h6>
+            <p>Menjadi fakultas ilmu komunikasi yang unggul dan berdaya saing di tingkat nasional serta berkontribusi peningkatan kesejahteraan masyarakat pada tahun 2045..</p>
+            <button class="btn btn-dark btn-sm"><a href="https://share.google/3Ro7RavD82KiPwKeD">Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 p-3 text-center">
+          <img src="<?=base_url("img/magister.jpg")?>" alt="Fakultas">
+          <div class="card-body">
+            <h6>FALKUTAS AGROBISNIS DAN REKAYASA PERTANIAN</h6>
+            <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+            <button class="btn btn-dark btn-sm"><a href="https://share.google/B2F1MKqBtQLNYgnvb">Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 p-3 text-center">
+          <img src="<?=base_url("img/magister.jpg")?>" alt="Fakultas">
+          <div class="card-body">
+            <h6>FAKULTAS KEGURUAN DAN ILMU PENDIDIKAN</h6>
+            <p>Fakultas Keguruan dan Ilmu Pendidikan di Universitas Subang memiliki 3 Program Studi yaitu Pendidikan Matematika, Pendidikan Bahasa Inggris dan Pendidikan Jasmani Kesehatan dan Rekreasi.</p>
+            <button class="btn btn-dark btn-sm"><a href="https://share.google/FGQfEvO9pWvUmz8KL">Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 p-3 text-center">
+          <img src="<?=base_url("img/magister.jpg")?>" alt="Fakultas">
+          <div class="card-body">
+            <h6>FAKULTAS TEKNIK</h6>
+            <p>Mewujudkan Fakultas yang Membentuk Lulusan “Masagi” bidang Rekayasa di tingkat Lokal dan Jawa Barat Tahun 2023.</p>
+            <button class="btn btn-dark btn-sm"><a href="https://share.google/Emged7DQxjyFkSAlu">Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 p-3 text-center">
+          <img src="<?=base_url("img/magister.jpg")?>" alt="Fakultas">
+          <div class="card-body">
+            <h6>MAGISTER ADMINISTRASI PUBLIK</h6>
+            <p>Program Studi Magister Ilmu Administrasi Universitas Subang didirikan pada tahun 2021 berdasarkan dengan keputusan BAN-PT No. 13882/SK/BAN-PT/Ak-PPJ/M/XII/2021 dengan konsentrasi Administrasi Publik.</p>
+            <button class="btn btn-dark btn-sm"><a href="https://share.google/5zjsfqKLMlrK9gvEt">Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
     <!-- berita -->
      <div class="container mt-4 mb-5">
