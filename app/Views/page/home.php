@@ -228,8 +228,8 @@
                             Informasi
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="sejarah">Berita </a></li>
-                            <li><a class="dropdown-item" href="#">Agenda</a></li>
+                            <li><a class="dropdown-item" href="#sejarah">Berita </a></li>
+                            <li><a class="dropdown-item" href="#agenda">Agenda</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -288,7 +288,7 @@
                     <p>Universitas Subang yang biasa di singkatn (Unsub) merupakan Universitas hpertama yang ada di kabupaten Subang, memiliki 7 Fakultas dan 14 Program Studi (prodi) dengan jenjang pendidikan S2, S1 dan D3. Terdiri atas 2 (dua) kampus, yakni Kampus I dan Kampus II. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
                 </div>
                 <div class="image-content">
-                    <img src="<?= base_url("img/bg2.jpg") ?>" alt="Gedung Universitas Subang">
+                    <img src="https://youtu.be/P4WPrqNteNE" alt="Gedung Universitas Subang">
                 </div>
             </div>
         </div>
@@ -302,7 +302,11 @@
                     <img src="<?= base_url("img/bg.jpg") ?>" alt="Gedung Universitas Subang">
                 </div>
                 <div class="text-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                    <p>Yayasan Kutawaringin Subang sebenarnya sudah didirikan dan diresmikan sejak tanggal 10 November 1964 dengan dibukannya Universitas Kutawaringin (UNKUWA) yang digagas oleh Bapak Otje Djunjunan,Bapak R.H Acu Samsudin dan Bapak R.Erawan Asmara,yang didukung oleh berbagai pihak antara lain PGRI,Pemda Subang,Organisasi Politik dll. _n_ Saat itu pula dibukannya Fakultas Hukum dan Pengetahuan Masyarakat (FHPM) kelas jauh Fakultas Hukum UNiversitas Padjajaran (UNPAD) yang kemudian dibuka pula Fakultas Keguruan dan Ilmu Pendidikan (FKIP) Fillial IKIP Bandung pada tahun 1965.
+
+<br><br>Karena berbagai hal keberadaan Universitas Kutawaringin Subang pada Tahun 1969 terhenti termasuk akibat ada larangan bagi perguruan tinggi tidak diperbolehkan membuka kelas jauh.Selanjutnya pada tahun 1982 atas prakarsa Bapak Bupati Ir.Sukanda Karta Sasmita(alm) Yayasan Kutawaringin Subang dibangkitkan kembali dan dibukannya Sekolah Tinggi Ilmu Administrasi (STIA) kerjasama dengan Universitas Padjajaran (UNPAD) Bandung,dalam rangka meningkatkan Kualitas SDM aparatur Pemerintah Daerah Kabupaten Subang,dan Masyarakat Subang pada umumnya.
+
+<br><br>Berikut atas prakarsa Bapak Bupati Drs.H.Abdul Wachyan didirikan pula Sekolah Tinggi Teknik (STT) Kutawaringin Subang tahun 1997 dalam rangka mengantisipasi kebutuhan tenaga kerja pabrik industri TEXMACO dikecamatan Pabuaran. Cita cita Yayasan Kutawaringin Subang mendirikan Universitas baru dapat diwujudkan berkat prakarsa Bapak Drs.Eep Hidayat sejak menjabat ketua DPRD II Subang sampai menjadi Bupati Subang Periode 2004-2009 bahkan hingga saat ini.</p>
                 </div>
             </div>
         </div>
@@ -316,11 +320,14 @@
                     <center>
                         <h3>Visi</h3>
                     </center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Menjadi lembaga pendidikan tinggi yang dapat mengembangkan sumber daya manusia, ilmu pengetahuan, teknologi, dan kewirausahaan, serta berkontribusi pada pembangunan daerah dan nasional melalui pendidikan dan pengabdian yang berjiwa Pancasila dan berbasis kearifan lokal</p>
                     <center>
                         <h3>Misi</h3>
                     </center>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                    <p>1. Menyelenggarakan pendidikan dan pembelajaran yang bermutu dalam rangka menghasilkan lulusan yang berilmu pengetahuan, bermoral pancasila, dan berjiwa interpreneurship
+<br>2. Menjalin kerjasama dalam penelitian dengan berbagai pihak, baik dengan instansi pemerintah swasta dan lembaga lain dalam rangka meningkatkan mutu lulusan
+<br>3. Menyelenggarakan pengabdian kepada masyarakat yang berorientasi pada pemberdayaan masyarakat melalui penerapan ilmu pengetahuan teknologi dan seni
+<br>4. Ikut serta dalam upaya pencapaian Visi dan Misi Kabupaten Subang dan Provinsi Jawa Barat</p>
                 </div>
             </div>
         </div>
@@ -487,7 +494,7 @@
     </a>
 
     <!-- Twitter (X sekarang) -->
-    <a href="https://twitter.com" target="_blank">
+    <a href="https://x.com/unsub_camp?t=9Yp7riVc_okSHnxu76bFfQ&s=09" target="_blank">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter">
     </a>
 
