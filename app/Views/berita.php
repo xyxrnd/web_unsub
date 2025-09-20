@@ -28,11 +28,11 @@
                 </li>
                 <li class="cards__item">
                     <div class="card">
-                        <img src="img/berita3.png" alt="">
+                        <img src="img/berita4.jpg" alt="">
                         <div class="card__content">
-                            <div class="card__title">Selamat & Sukses</div>
-                            <p class="card__text">UNSUB, 22 Agustus 2025 - Berdasarkan Keputusan LAM INFOKOM No. 110/SK/LAM-INFOKOM/Ak/S/VIII/2025 menyatakan bahwa program studi Sistem Infromasi pada Program Sarjana Universitas Subang, Memenuhi Syarat Peringkat Akreditasi Baik Sekali..</p>
-                            <button class="btn btn--block card__btn"><a href="https://unsub.ac.id/2025/08/22/selamat-sukses-atas-diraihnya-peringkat-akreditasi-baik-sekali-program-studi-sistem-informasi/">Selengkapnya</button></a>
+                            <div class="card__title">Asesmen Akreditasi Program Studi Agribisnis</div>
+                            <p class="card__text">UNSUB, 21 Juli 2025 – Asesmen Lapangan Secara Berani Akreditasi Program Studi Agribisnis Program Sarjana (S-1) Fakultas Agrobisnis dan Rekayasa Pertanian Universitas Subang.</p>
+                            <button class="btn btn--block card__btn"><a href="https://unsub.ac.id/2025/08/15/asesmen-lapangan-secara-daring-akreditasi-program-studi-agribisnis/">Selengkapnya</button></a>
                         </div>
                     </div>
                 </li>
