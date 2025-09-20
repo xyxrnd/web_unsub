@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('page/home'); // beranda
+        return view('layouts/base'); // beranda
     }
 
     public function agenda()

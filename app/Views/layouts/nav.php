@@ -1,38 +1,43 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-    <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center" href="<?= base_url('/') ?>">
-            <img src="<?= base_url('icon.png') ?>"
-                alt="Logo Unsub" width="40" height="40" class="me-2">
-            <span class="fw-bold text-uppercase">Universitas Subang</span>
+<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="<?= base_url("img/Logo_Unsub.png") ?>" alt="Logo" width="35" height="35" class="d-inline-block align-text-top ms-4 me-2">
+            <div class="d-flex flex-column lh-1">
+                <span class="#">Universitas</span>
+                <span class="font-brand">Subang</span>
+            </div>
         </a>
-
-        <!-- Toggle button (mobile) -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Menu -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto fw-semibold">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link <?= (uri_string() == '' ? 'active text-primary' : '') ?>" href="<?= base_url('/') ?>">BERANDA</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Profil
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#sejarah">Sejarah</a></li>
+                        <li><a class="dropdown-item" href="#visimisi">Visi & Misi</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= (uri_string() == 'profil' ? 'active text-primary' : '') ?>" href="<?= base_url('/profil') ?>">PROFIL</a>
+                    <a class="nav-link active" aria-current="page" href="#akademik">Akademik</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Informasi
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#berita">Berita </a></li>
+                        <li><a class="dropdown-item" href="#agenda">Agenda</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= (uri_string() == 'akademik' ? 'active text-primary' : '') ?>" href="<?= base_url('/akademik') ?>">AKADEMIK</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link <?= (uri_string() == 'informasi' ? 'active text-primary' : '') ?>" href="<?= base_url('/informasi') ?>">INFORMASI</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link <?= (uri_string() == 'agenda' ? 'active text-primary' : '') ?>" href="<?= base_url('/agenda') ?>">AGENDA</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link <?= (uri_string() == 'kontak' ? 'active text-primary' : '') ?>" href="<?= base_url('/kontak') ?>">KONTAK</a>
+                    <a class="nav-link active" aria-current="page" href="#footer"> Kontak </a>
                 </li>
             </ul>
         </div>
